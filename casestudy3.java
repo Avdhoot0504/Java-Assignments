@@ -58,9 +58,17 @@ public class casestudy3{
         s.addproduct(p2);
         s.addproduct(p3);
         s.addproduct(p4);
-
-   
-
+        
+        s.Displaycart(); 
+        System.out.println("\nTotal Cost is:"+s.calctotalcost());
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter product name to remove: ");
+        String productName = sc.nextLine();
+        s.removeproduct(productName);
+        System.err.println("Product removed successfuly");
+        
+        System.err.println("Updated list:");
         s.Displaycart(); 
         System.out.println("\nTotal Cost is:"+s.calctotalcost());
 
